@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape HAO-JUN KAN} \\ \vspace{1pt}
+    \small \href{mailto:kanhaojun.ascdfkan@gmail.com}{\underline{kanhaojun.ascdfkan@gmail.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ming Chuan University}{Taoyuan City}
+      {Bachelor of Science in Information Engineering}{Sep 2018 - June 2022}
+    \resumeSubheading
+      {Ming Chuan University}{Taoyuan City}
+      {Bachelor of Science in Information Management}{Sep 2016 - June 2022}
+    \resumeSubheading
+      {Lunghwa University of Science and Technology}{Taoyuan City}
+      {Major in Information Management}{Sep 2015 – Sep 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Summer School}{July 2018 - Aug 2018}
+      {Ming Chuan University- Michigan Location}{Michigan, U.S}
+      \resumeItemListStart
+        \resumeItem{Participate in the academic exchange activities of Ming Chuan University in the United States. Learn about the history and culture of American society and the current state of society.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {SITCON Summer Camp }{Jan 2017 - Aug 2017}
+      {Tunghai University}{Taichung City}
+      \resumeItemListStart
+        %\resumeItem{Joined a summer camp called SITCON to learn basic Python skills.}
+        \resumeItem{Attend a summer camp at SITCON (Students' Information Technology Conference) to learn basic Python skills and learn more advanced computer principles. SITCON is the largest student open-source program organization in Taiwan, composed of computer student associations from many universities in Taiwan.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {LHUIOSC}
+      {Jan 2015 - Aug 2015}{Lunghwa University of Science and Technology}{Taoyuan City}
+      \resumeItemListStart
+        \resumeItem{Participate in the open source community of Longhua University of Science and Technology, and then participate in the open source activity COSCUP(Conference for Open Source Coders, Users and Promoters). The COSCUP event is the largest open source community event in Taiwan.Learn about the Linux operating systems.}
+    \resumeItemListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Whack-a-mole game} $|$ \emph{Pixel 3 API 30}}{Apr 2020 - June 2020}
+          \resumeItemListStart
+            \resumeItem{This is a game created with Pixel 3 API 30.}
+            \resumeItem{Besides the usual moles, there are also scorpions in the game, which players have to avoid hitting. }
+            \resumeItem{Other features include count down and points earned. }
+            \resumeItem{When the game is over, players can see their rank and the final points.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Autopay} $|$ \emph{Java, Android Studio}}{Mar 2019 – Jul 2019}
+          \resumeItemListStart
+            \resumeItem{This is a system built with android studio. It allows users to set up date for a future payment.}
+            \resumeItem{Users only need to enter the amount of payment and make confirmation, and then an entry regarding the payment will appear on the screen.}
+            \resumeItem{After the payment is processed, users can manually delete the entry, and repeat the process next time when it is needed.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Ideallife} $|$ \emph{R, R Shiny Server, Data Visualization }}{May 2017 – Oct 2018}
+          \resumeItemListStart
+            \resumeItem{I created a database to determine which cities are suitable for people to live in, with the user interface designed with HTML.The statistics of factors, such as temperature, humidity, air quality, means of transportation, are collected to make analyses. Users only need to click on a desired location and all the related information will be displayed on the screen. }
+            \resumeItem{Based on the concept of data visualization, it is developed using R and Shiny Server. The goal is to analyze the cities and visualization platforms suitable for the elderly population.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{PROFESSIONAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: R, Java, JavaScript, Python, C/C++, Visual Basic, HTML/CSS, SQL(MSSQL, MariaDB), LaTeX} \\
+     \textbf{Machine Learning Framework}{: TensorFlow}\\
+     \textbf{Project Management}{: Git, GitHub}\\
+     \textbf{Server}{: Ubuntu, RedHat, Windows Server} 
+    }}
+ \end{itemize}
+
+% \section{PROFESSIONAL CERTIFICATIONS}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Techficiency Quotient Certification Excel 17}{: Jun 2020} \\
+%      \textbf{Enterprise Resouce Planning System}{: Jun 2019}
+%     }}
+%  \end{itemize}
+%-------------------------------------------
+\end{document}
